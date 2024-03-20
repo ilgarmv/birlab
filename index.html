@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIR Lab</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="(min-width:550px)"/>
+<script>
+    let matchMedia = window.matchMedia("(min-width:550px)");
+    if(!matchMedia.matches){
+       let myNonMobileScript = document.createElement("script");
+       myNonMobileScript.src="https://unpkg.com/aos@2.3.1/dist/aos.js" 
+       document.body.insertAdjacentElement("beforeend", myNonMobileScript);
+       AOS.init();
+}
+</script>
+<script>
+    
+</script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="gradient-bg-left-1"></div>
+        <div class="container">
+            <header>
+                <div class="logo" >
+                    <img src="/assets/img/birlablogo.svg" alt="">
+                </div>
+                <div class="links">
+                       <a href="#features" data-aos="fade-up" data-aos-delay="300">Üstünlüklərimiz</a>
+                    <a href="#services" data-aos="fade-up" data-aos-delay="400">Xidmətlərimiz</a>
+                 
+                    <a href="#customers" data-aos="fade-up" data-aos-delay="500" >Müştərilərimiz</a>
+                    <a href="#contact" data-aos="fade-up" data-aos-delay="600" >Əlaqə</a>
+                </div>
+                <a href="https://wa.me/994104242410" ><button class="get"  >Layihəm var</button></a>
+            </header>
+
+
+            <div class="header-mobile" >
+                <div class="header-mobile-left">
+                    <img src="/assets/img/birlablogo.svg" alt="">
+                </div>
+
+                <div class="mobile-links">
+                    <div class="top">
+                        <a href="#features" data-aos="fade-up" data-aos-delay="100">Üstünlüklərimiz</a>
+                    <a href="#services" data-aos="fade-up" data-aos-delay="200">Xidmətlərimiz</a>
+                    <a href="#customers" data-aos="fade-up" data-aos-delay="300" >Müştərilərimiz</a>
+                    <a href="#contact" data-aos="fade-up" data-aos-delay="400" >Əlaqə</a>
+                    </div>
+                   <div class="bottom">
+                        <a href="https://www.instagram.com/birlab.az/" target="_blank"><svg width="30" height="30"
+                                viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15 1C22.7324 1 29 7.2685 29 15C29 22.7316 22.7324 29 15 29C7.26753 29 1 22.7315 1 15C1 7.26859 7.26763 1 15 1Z"
+                                    stroke="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3989 10.1994C11.3989 10.8615 10.8615 11.3988 10.1995 11.3988C9.53736 11.3988 9 10.8615 9 10.1995C9 9.53736 9.53736 9 10.1995 9C10.8615 9 11.3989 9.53728 11.3989 10.1994ZM18.3459 11.9206C17.1832 11.9206 16.1429 12.3452 15.405 13.2824V12.1709H13.0005V20.1822H15.405V15.8499C15.405 14.9344 16.2438 14.0412 17.2944 14.0412C18.3451 14.0412 18.6042 14.9344 18.6042 15.8275V20.1814H20.9999V15.6492C20.9998 12.5011 19.5093 11.9206 18.3459 11.9206ZM9.01307 20.1814H11.4087V12.1965H9.01307V20.1814Z"
+                                    fill="currentColor"></path>
+                            </svg></a>
+                        <a href="https://www.linkedin.com/company/birlab/" target="_blank"><svg width="30" height="30"
+                                viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15 1C22.7314 1 29 7.2685 29 15C29 22.7316 22.7315 29 15 29C7.26859 29 1 22.7315 1 15C1 7.26859 7.26763 1 15 1Z"
+                                    stroke="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.3188 9H18.6804C19.9595 9 20.9999 10.0404 21 11.3188V18.6812C21 19.9596 19.9602 21 18.6812 21H11.3188C10.0404 21 9 19.9602 9 18.6812V11.3188C9 10.0404 10.0398 9 11.3188 9ZM19.6739 10.3413L19.4113 10.342L17.6611 10.348L17.6677 12.3396L19.6739 12.3329V10.3413ZM15 12.9925C16.6642 12.9925 17.0074 14.5548 17.0074 15.0007C17.0074 16.1064 16.1063 17.0075 15 17.0075C13.8929 17.0075 12.9925 16.1064 12.9925 15.0007C12.9918 14.5548 13.3357 12.9925 15 12.9925ZM18.5344 19.6854C19.1696 19.6854 19.6848 19.1695 19.6848 18.5356H19.6833V13.6641H18.037C18.191 14.0446 18.2784 14.5645 18.2784 15.0004C18.2784 16.8094 16.8074 18.2817 14.9978 18.2817C13.1882 18.2817 11.7165 16.8094 11.7165 15.0004C11.7165 14.5645 11.8039 14.0446 11.9585 13.6641H10.2922V18.5356C10.2922 19.1702 10.8081 19.6854 11.4426 19.6854H18.5344Z"
+                                    fill="currentColor"></path>
+                            </svg></a>
+                   
+                    <p>Telefon: <a href="tel:+994104242410">+994 10 424 24 10</a></p>
+                    <p>E-poçt: <a href="mailto:contact@birlab.az">contact@birlab.az</a></p>
+                   </div>
+                </div>
+
+                <div class="header-mobile-right" id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+                    </svg>
+                </div>
+
+            </div>
+
+
+            <div class="hero_section" >
+                <h1 data-aos="fade-up" data-aos-delay="300">Problemlərin həlli <strong style="color: #C52049">BİR</strong> yerdə</h1>
+                <p class="top-text" data-aos="fade-up" data-aos-delay="500">Ən qısa müddət ərzində xəyalınızdakı veb-sayt və ya digər İT həllərinə sahib olmaq
+                    istəyirsinizsə, doğru ünvandasınız!</p>
+                 <a href="https://wa.me/994104242410" ><button class="contact" data-aos="fade-up" data-aos-delay="700">Bizimlə Əlaqə</button></a>
+       
+	  </div>
+            		
+
+            <div class="techstack" data-aos="fade-right" id="features">
+                <h2>Layihənizə uyğun texnologiyalardan istifadə</h2>
+                <div class="stack"  >
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="10">
+                        <img src="/assets/img/git.png" alt="">
+                        <p class="title">Git</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="20">
+                        <img src="/assets/img/html5.png" alt="">
+                        <p class="title">HTML5</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="30">
+                        <img src="/assets/img/css3.png" alt="">
+                        <p class="title">CSS3</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="40">
+                        <img src="/assets/img/bootstrap4.png" alt="">
+                        <p class="title">Bootstrap 5</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="50">
+                        <img src="/assets/img/tailwind.png" alt="">
+                        <p class="title">Tailwind</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="60">
+                        <img src="/assets/img/js.png" alt="">
+                        <p class="title">JavaScript</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="70">
+                        <img src="/assets/img/reactjs.png" alt="">
+                        <p class="title">ReactJS</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="80">
+                        <img src="/assets/img/java.png" alt="">
+                        <p class="title">Java</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="90">
+                        <img src="/assets/img/spring.png" alt="">
+                        <p class="title">Spring</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="100">
+                        <img src="/assets/img/php.png" alt="">
+                        <p class="title">PHP</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="110">
+                        <img src="/assets/img/laravel.png" alt="">
+                        <p class="title">Laravel</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="120">
+                        <img src="/assets/img/swift.png" alt="">
+                        <p class="title">Swift</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="130">
+                        <img src="/assets/img/flutter.png" alt="">
+                        <p class="title">Flutter</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="140">
+                        <img src="/assets/img/wordpress.png" alt="">
+                        <p class="title">WordPress</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="150">
+                        <img src="/assets/img/nodejs.png" alt="">
+                        <p class="title">NodeJS</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="160">
+                        <img src="/assets/img/mysql.png" alt="">
+                        <p class="title">MySQL</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="170">
+                        <img src="/assets/img/postgresql.png" alt="">
+                        <p class="title">PostgreSQL</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="180">
+                        <img src="/assets/img/mongodb.png" alt="">
+                        <p class="title">MongoDB</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="190">
+                        <img src="/assets/img/firebase.png" alt="">
+                        <p class="title">Firebase</p>
+                    </div>
+                    <div class="stack_box" data-aos="fade-up" data-aos-delay="200">
+                        <img src="/assets/img/docker.png" alt="">
+                        <p class="title">Docker</p>
+                    </div>
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="210">
+                        <img src="/assets/img/kubernetes.png" alt="">
+                        <p class="title">Kubernetes</p>
+                    </div>
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="220">
+                        <img src="/assets/img/rabbitmq.png" alt="">
+                        <p class="title">RabbitMQ</p>
+                    </div>
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="230">
+                        <img src="/assets/img/apachekafka.png" alt="">
+                        <p class="title">Kafka</p>
+                    </div>
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="240">
+                        <img src="/assets/img/aws.png" alt="">
+                        <p class="title">AWS</p>
+                    </div>
+                    <div class="stack_box"  data-aos="fade-up" data-aos-delay="250">
+                        <img src="/assets/img/heroku.png" alt="">
+                        <p class="title">Heroku</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gradient-bg-right-1"></div>
+            <div class="analytics"  data-aos="fade-right"  data-aos-delay="100" >
+                <div class="box" >
+                    <div class="box-texts">
+                        <h2 class="boxHeroText">Unikal Görünüş</h2>
+                        <p>UI/UX dizaynerlərimiz tərəfindən biznesinizə uyğun şablon olmadan sıfırdan dizayn edilir.
+                        </p>
+
+                    </div>
+                    <div class="box-img">
+                        <img src="/assets/img/uiux.png" alt="">
+                    </div>
+                </div>
+                <div class="box overview"  data-aos="fade-up"  data-aos-delay="100" >
+                    <h2 class="boxHeroText">Ümumi Baxış</h2>
+                   
+                    <img src="/assets/img/overview.png" alt="">
+
+                    <div class="mini-boxes">
+                        <div class="mini-box">
+                            <p>Layihələr</p>
+                            <h2 id="lyh">15+</h2>
+                        </div>
+                        <div class="mini-box">
+                            <p>İşçilər</p>
+                            <h2  id="value">14</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box"  data-aos="fade-left"  data-aos-delay="100" >
+                    <div class="box-texts">
+                        <h2 class="boxHeroText">7/24 Dəstək</h2>
+                        <p>Komandamız qeyri-iş günündən asılı olmayaraq hər zaman texniki dəstək
+                            göstərir.</p>
+
+                    </div>
+                    <div class="box-img">
+                        <img src="/assets/img/clock.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="services" id="services">
+                <h2>Xidmətlərimiz</h2>
+                <div class="services-content">
+                    <div class="service-box" data-aos="fade-right">
+                        <img src="" alt="" class="icon">
+                        <h3 class="service-name">Veb-saytların yaradılması</h3>
+                        <p class="service-text">Peşəkar veb saytların hazırlanması sizin hədəf kütlənizə çatmağınız, müştəri əldə etməyiniz, onları əldə saxlamağınız və qazancınızı artırmağımız üçün ilk addımlardandır. Düşünürük ki, veb-sayt xidmətlərimiz sizin üçün uyğun seçim olacaqdır.</p>
+                    </div>
+                    <div class="service-box" data-aos="fade-left">
+                        <img src="" alt="" class="icon">
+                        <h3 class="service-name">Mobil tətbiqlərin yaradılması</h3>
+                        <p class="service-text">İstifadəsi gündən günə artan və həyatımızı asanlaşdıran mobil tətbiqlər sizin müştərilərinizin rahatlığı və əlçatanlığı üçün lazım olan ən əsas amillərdəndir. Düşünürük ki, mobil tətbiq xidmətlərimiz sizin üçün uyğun seçim olacaqdır.
+                        </p>
+                    </div>
+                    <div class="service-box" data-aos="fade-right">
+                        <img src="" alt="" class="icon">
+                        <h3 class="service-name">Nüfuzetmə testinin edilməsi</h3>
+                        <p class="service-text">Test zəiflikləri, o cümlədən icazəsiz tərəflərin sistemin xüsusiyyətlərinə və məlumatlarına giriş əldə etmək potensialını müəyyən etmək üçün həyata keçirilir ki, bu da tam risk qiymətləndirməsinin tamamlanmasına imkan verir.</p>
+                    </div>
+                        <div class="service-box" data-aos="fade-left">
+                        <img src="" alt="" class="icon">
+                        <h3 class="service-name">Hostinq və domen xidmətləri</h3>
+                        <p class="service-text">İnternetdəki veb saytınızın fasiləsiz yayımlanması və məlumatların təhlükəsiz toplanması üçün yüksək sürətli hostinq xidməti seçməlisiniz. Düşünürük ki,  Hostinq və domen adı xidmətlərimiz sizin üçün uyğun seçim olacaqdır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h2>Layihən var? Gəl danışaq</h2>
+                <div class="contact-content">
+                    <img src="https://whiteappletechnologies.com/wp-content/uploads/2020/10/5e956406c7d8c2078fbe3bad_ezgif.com-optimize2.gif" height="500" width="500" alt="">
+                    <form action="send.php" method="post">
+                        <div class="contact-box">
+                            <input type="text" name="fullname" placeholder="Ad Soyad" required>
+                            <input type="text" name="business" placeholder="Şirkət" required>
+                        </div>
+                        <div class="contact-box">
+                            <input type="email" name="email" placeholder="E-poçt" required>
+                            <input type="text" name="phone" placeholder="Telefon" required>
+                        </div>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Mesaj" required></textarea>
+                        <button type="submit">Göndər</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <img src="/assets/img/birlablogo.svg" alt="" class="logo">
+                        <p>Bütün hüquqlar qorunur <br> ©
+                            <script>document.write(new Date().getFullYear())</script> <a href="https://birlab.az">BIRLab</a>
+                        </p>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-item">
+                            <h2>Bizi izləyin</h2>
+                            <div class="socials">
+                                <a href="https://www.instagram.com/birlab.az/" target="_blank"><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15 1C22.7324 1 29 7.2685 29 15C29 22.7316 22.7324 29 15 29C7.26753 29 1 22.7315 1 15C1 7.26859 7.26763 1 15 1Z"
+                                            stroke="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3989 10.1994C11.3989 10.8615 10.8615 11.3988 10.1995 11.3988C9.53736 11.3988 9 10.8615 9 10.1995C9 9.53736 9.53736 9 10.1995 9C10.8615 9 11.3989 9.53728 11.3989 10.1994ZM18.3459 11.9206C17.1832 11.9206 16.1429 12.3452 15.405 13.2824V12.1709H13.0005V20.1822H15.405V15.8499C15.405 14.9344 16.2438 14.0412 17.2944 14.0412C18.3451 14.0412 18.6042 14.9344 18.6042 15.8275V20.1814H20.9999V15.6492C20.9998 12.5011 19.5093 11.9206 18.3459 11.9206ZM9.01307 20.1814H11.4087V12.1965H9.01307V20.1814Z"
+                                            fill="currentColor"></path>
+                                    </svg></a>
+                                <a href="https://www.linkedin.com/company/birlab/" target="_blank"><svg width="30"
+                                        height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15 1C22.7314 1 29 7.2685 29 15C29 22.7316 22.7315 29 15 29C7.26859 29 1 22.7315 1 15C1 7.26859 7.26763 1 15 1Z"
+                                            stroke="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3188 9H18.6804C19.9595 9 20.9999 10.0404 21 11.3188V18.6812C21 19.9596 19.9602 21 18.6812 21H11.3188C10.0404 21 9 19.9602 9 18.6812V11.3188C9 10.0404 10.0398 9 11.3188 9ZM19.6739 10.3413L19.4113 10.342L17.6611 10.348L17.6677 12.3396L19.6739 12.3329V10.3413ZM15 12.9925C16.6642 12.9925 17.0074 14.5548 17.0074 15.0007C17.0074 16.1064 16.1063 17.0075 15 17.0075C13.8929 17.0075 12.9925 16.1064 12.9925 15.0007C12.9918 14.5548 13.3357 12.9925 15 12.9925ZM18.5344 19.6854C19.1696 19.6854 19.6848 19.1695 19.6848 18.5356H19.6833V13.6641H18.037C18.191 14.0446 18.2784 14.5645 18.2784 15.0004C18.2784 16.8094 16.8074 18.2817 14.9978 18.2817C13.1882 18.2817 11.7165 16.8094 11.7165 15.0004C11.7165 14.5645 11.8039 14.0446 11.9585 13.6641H10.2922V18.5356C10.2922 19.1702 10.8081 19.6854 11.4426 19.6854H18.5344Z"
+                                            fill="currentColor"></path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Əlaqə</h2>
+                            <p>Telefon: <a href="tel:+994 50 000 00 00">+994 50 000 00 00</a></p>
+                            <p>E-poçt: <a href="mailto:contact@birlab.az">contact@birlab.az</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("value");
+animateValue(obj, 0, 14, 5000);
+
+
+
+
+
+    </script>
+    <script>
+        
+        function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("lyh");
+animateValue(obj, 0, 29, 5000);
+    </script>
+    <script>
+
+
+  AOS.init();
+
+</script>
+<script>
+    $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
+<script>
+    const menu = document.getElementById('menu');
+    const links = document.querySelector('.mobile-links');
+    menu.addEventListener('click', () => {
+        links.classList.toggle('active');
+    })
+</script>
+</body>
+
+
+
+
+</html>
